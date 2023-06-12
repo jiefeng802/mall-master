@@ -1,0 +1,18 @@
+数据库帐号密码：root root
+.\redis-server.exe redis.windows.conf
+net start MongoDB
+
+mysql -u root -p
+mysql密码：root
+
+.\redis-server.exe redis.windows.conf
+.\redis-cli.exe -h 127.0.0.1 -p 6379
+
+
+.\elasticsearch.bat
+.\kibana.bat
+
+.\rabbitmq-plugins enable rabbitmq_management
+.\rabbitmq-server.bat start
+输入账号密码并登录：guest guest
+创建帐号并设置其角色为管理员：mall mall
